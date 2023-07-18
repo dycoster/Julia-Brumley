@@ -24,7 +24,7 @@ header {
 	background-size: cover;
 	background-position: top ;
 	overflow-x: hidden;
-    background-image: url(../images/ocean.jpg);
+    background-image: url(../images/ocean3.jpg);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -37,9 +37,10 @@ header {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	margin-top: 2vh;
+	padding-top: 2vh;
 	align-items: baseline;
 	position: relative;
+    background-color:#05232ba1;
 	z-index: 1;
 }
 
@@ -64,24 +65,115 @@ header {
 }
 
 .nav-links a:hover {
-	color: #50645b;
+	color: #fff3cc
 }
-.intro {
-    max-width: 55%;
-    margin: 0 0 15vh 3vh;
-}
+
 #title {
     font-family: 'Merriweather', serif; 
     font-size: 2rem;
     color:#fff;
 	text-decoration: none;
+
+}
+
+.intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1vh;
 }
 
 h1 {
     font-family: 'Merriweather', serif; 
     font-size: 4rem;
+    margin-bottom: 2rem;
 }
+h2 {
+    font-family: 'Merriweather', serif; 
+    font-size: 2.5rem;
+}
+
 h3 { 
     font-size: 1.5rem;
     font-weight: 300;
+    letter-spacing: 1.2px;
  }
+
+ p {
+    font-size: 1.5rem;
+    max-width: 80%;
+ }
+.text-box {
+    max-width: 50%;
+}
+
+.portrait {
+    border-radius: 15rem;
+}
+section {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.button {
+    background:#05232bd1;
+    color:#fff;
+    padding: 1.5rem 3rem;
+}
+.book {
+    background: #fff;
+    color:#444;
+    padding: 1.5rem 3rem;
+}
+.approach {
+    color: #444;
+}
+.services {
+    background: radial-gradient(#05232bd1, #05232b);
+}
+.space {
+    color:#444;
+}
+.quote {
+    background: radial-gradient(#05232bd1, #05232b);
+}
+
+footer {   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 25vh;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    color:#444;
+}
+
+footer a {
+    text-decoration: none;
+    color: #444;
+    text-transform: uppercase;
+}
+.f-li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+footer h3 {
+    margin-bottom: 1rem;
+}
