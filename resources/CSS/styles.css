@@ -33,12 +33,11 @@ header {
 
 /* nav styling */
 .nav {
-	height: 8vh;
+	height: 10vh;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	padding-top: 2vh;
-	align-items: baseline;
+	align-items: center;
 	position: relative;
     background-color:#05232ba1;
 	z-index: 1;
