@@ -18,16 +18,10 @@ body {
 
 /* Header styles */
 header {
-	min-height: 100vh;
+	min-height: 80vh;
 	width: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top ;
 	overflow-x: hidden;
-    background-image: url(../images/ocean3.jpg);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    background: linear-gradient(135deg, #137AA8, #05232b);
 }
 
 
@@ -39,7 +33,7 @@ header {
 	justify-content: space-around;
 	align-items: center;
 	position: relative;
-    background-color:#05232ba1;
+    background-color:#093e4d;
 	z-index: 1;
 }
 
@@ -64,7 +58,7 @@ header {
 }
 
 .nav-links a:hover {
-	color: #fff3cc
+	color: #FFBD59
 }
 
 #title {
@@ -72,7 +66,6 @@ header {
     font-size: 2rem;
     color:#fff;
 	text-decoration: none;
-
 }
 
 .burger {
@@ -92,7 +85,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 1vh;
+    margin-top: 10vh;
 }
 
 h1 {
@@ -128,6 +121,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    padding: 1rem;
 }
 
 section a {
@@ -135,26 +129,34 @@ section a {
     text-transform: uppercase;
 }
 .button {
-    background:#05232bd1;
+    background:#093e4d;
     color:#fff;
     padding: 1.5rem 3rem;
+}
+.button:hover {
+    background-color: #FFBD59;
+    color:#05232b
 }
 .book {
     background: #fff;
     color:#444;
     padding: 1.5rem 3rem;
 }
+.book:hover {
+    background-color: #FFBD59;
+    color:#05232b
+}
 .approach {
     color: #444;
 }
 .services {
-    background: radial-gradient(#05232bd1, #05232b);
+    background: radial-gradient(#0d5576, #05232b);
 }
 .space {
     color:#444;
 }
 .quote {
-    background: radial-gradient(#05232bd1, #05232b);
+    background: radial-gradient(#0d5576, #05232b);
 }
 
 footer {   
@@ -202,7 +204,7 @@ footer h3 {
         right: 0px;
         height: 53vh;
         top: 10vh;
-        background: radial-gradient(#05232bd1, #05232b);
+        background: radial-gradient(#0d5576, #05232b);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -258,4 +260,53 @@ footer h3 {
 .toggle .line3 {
     transform: rotate(+45deg) translate(-5px, -5px);
 }
+}
+@media screen and (max-width: 768px) {
+    header {
+        height: 100vh;
+    }
+    section {
+        height: 80vh;
+    }
+    #title {
+        font-size: 1.5rem;
+    }
+    .nav {
+        height: 15vh;
+        padding: 0 1rem;
+    }
+    .nav-links {
+        top:15vh;
+        width:100%;
+        height: 85vh;
+    }
+    .intro {
+        flex-direction: column;
+        margin-top: 4vh;
+    }
+    .text-box {
+        max-width: 90%;
+    }
+    .text-box h1 {
+        font-size: 3rem;
+    }
+    .text-box h3 {
+        font-size: 1rem;
+    }
+    section h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+    section h2 {
+        font-size: 1.5rem;
+    }
+    section p {
+        font-size: 1rem;
+    }
+    .book {
+        font-size: 0.8rem;
+    }
+    .button {
+        font-size: 0.8rem;
+    }
 }
