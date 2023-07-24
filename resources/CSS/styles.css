@@ -215,14 +215,14 @@ footer h3 {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 53vh;
+        height: 90vh;
         top: 10vh;
-        background: radial-gradient(#0d5017, #062d0c);
+        background: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
 		justify-content: space-evenly;
-        width: 40%;
+        width: 30%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
 		z-index: 2;
@@ -230,6 +230,9 @@ footer h3 {
     }
     .nav-links li{
         opacity: 0;
+    }
+    .nav-links a {
+        color: #444;
     }
     .burger {
         display: block;
@@ -276,7 +279,7 @@ footer h3 {
 }
 @media screen and (max-width: 768px) {
     header {
-        height: 100vh;
+        height: 95vh;
     }
     section {
         height: 80vh;
