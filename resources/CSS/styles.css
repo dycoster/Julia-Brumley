@@ -36,7 +36,12 @@ header {
 #services-header {
     background-image: url(../images/hands4.jpg);
 }
-
+#team-header {
+    background-image: url(../images/plant.jpg);
+}
+#contact-header {
+    background-image: url(../images/ocean3.jpg);
+}
 /* nav styling */
 .nav {
 	height: 10vh;
