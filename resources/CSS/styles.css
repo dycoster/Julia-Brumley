@@ -196,6 +196,7 @@ section a {
     max-width: 80%;
 }
 .service-cont p {
+    padding: 0 1rem 1rem 1rem;
     font-size: 0.8rem;
 }
 
@@ -338,7 +339,7 @@ footer h3 {
         height: 95vh;
     }
     section {
-        height: 80vh;
+        height: 100vh;
     }
     #title {
         font-size: 1.3rem;
@@ -380,5 +381,14 @@ footer h3 {
     }
     .button {
         font-size: 0.8rem;
+    }
+    .service-cont {
+        flex-direction: column;
+    }
+    .service-cont img {
+        max-width: 75%;
+    }
+    .space {
+        height: 70vh;
     }
 }
