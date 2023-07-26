@@ -304,7 +304,7 @@ footer h3 {
         right: 0px;
         height: 90vh;
         top: 10vh;
-        background: linear-gradient(90deg,#f5ecdc,#d7cdc2);
+        background: #f5ecdc;
         display: flex;
         flex-direction: column;
         align-items: center;
