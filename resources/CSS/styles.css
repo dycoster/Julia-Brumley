@@ -432,6 +432,7 @@ footer h3 {
         height:60vh;
     }
     .footer-nav {
+        height: 50vh;
         flex-direction: column;
         align-items: center;
     }
