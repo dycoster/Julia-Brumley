@@ -233,10 +233,23 @@ footer {
     color:#444;
 }
 
+.footer-nav-cont {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 footer a {
     text-decoration: none;
     color: #444;
     text-transform: uppercase;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
 }
 .f-li {
     list-style: none;
@@ -250,6 +263,11 @@ footer ul {
 }
 footer h3 {
     margin-bottom: 1rem;
+}
+
+.map-marker {
+    height: 2rem;
+    color:#444;
 }
 
 /* RESPONSIVE */
@@ -333,6 +351,10 @@ footer h3 {
 .toggle .line3 {
     transform: rotate(+45deg) translate(-5px, -5px);
 }
+
+.address {
+    margin-left: 1rem;
+}
 }
 @media screen and (max-width: 768px) {
     header {
@@ -382,6 +404,9 @@ footer h3 {
     .button {
         font-size: 0.8rem;
     }
+    .services {
+        height: 140vh;
+    }
     .service-cont {
         flex-direction: column;
     }
@@ -390,5 +415,25 @@ footer h3 {
     }
     .space {
         height: 70vh;
+    }
+    footer {
+        height:60vh;
+    }
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-nav-cont{
+        width: 100%;
+    }
+    .address {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    footer p{
+        max-width: 100%;
+    }
+    footer a {
+        font-size: 0.85rem;
     }
 }
