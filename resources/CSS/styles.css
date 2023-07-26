@@ -214,7 +214,19 @@ section a {
 .quote h2 {
     padding:2rem;
 }
+/* ABOUT Specific styles */
 
+.about {
+    height: 40vh;
+    color:#444;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 5vh;
+}
+.about p {
+    font-size: 0.8rem;
+}
 
 /* FOOTER styles */
 
@@ -435,5 +447,9 @@ footer h3 {
     }
     footer a {
         font-size: 0.85rem;
+    }
+
+    .about {
+        height: 120vh;
     }
 }
