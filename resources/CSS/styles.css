@@ -24,7 +24,7 @@ header {
 	min-height: 100vh;
 	width: 100%;
 	overflow-x: hidden;
-    background-image: url(../images/julia4.png);
+    background-image: url(../images/julia5.png);
     background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -122,7 +122,7 @@ h3 {
  }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     max-width: 80%;
  }
 .text-box {
@@ -214,20 +214,64 @@ section a {
 .quote h2 {
     padding:2rem;
 }
+
+
+
 /* ABOUT Specific styles */
 
-.about {
-    height: 40vh;
+
+
+.main {
+    height: fit-content;
     color:#444;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-left: 5vh;
 }
-.about p {
-    font-size: 0.8rem;
+.main p {
+    font-size: 1.2rem;
+}
+.main h2{
+    margin: 5vh 0;
+}
+.about {
+    padding-left: 5vh;
+    padding-bottom: 5vh;
+}
+.rates {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(#f5ecdc, #fff);
+}
+.quote h2{
+    color: #fff;
+}
+#about-approach {
+    background: #6b97c0;
+    color:#fff;
 }
 
+
+/* TEAM specific styles */
+
+
+#team-main {
+    display:flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 5vh;
+    height:fit-content;
+    margin-bottom: 10vh;
+}
+main img{
+    border-radius: 15rem;
+}
+.team-qualifications {
+    padding-left: 5vh;
+}
+.team-qualifications h2, h4{
+    margin: 0 0 2rem 0;
+}
 /* FOOTER styles */
 
 
@@ -237,6 +281,7 @@ footer {
     align-items: center;
     height: 25vh;
 }
+
 .footer-nav {
     display: flex;
     flex-direction: row;
@@ -285,10 +330,10 @@ footer h3 {
 /* RESPONSIVE */
 
 @media screen and (min-width: 1360px) {
-    header {
+    #header {
         height: 150vh;
     }
-    .intro {
+    #intro {
         margin-bottom: 55vh;
     }
 }
