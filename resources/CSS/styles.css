@@ -30,7 +30,7 @@ header {
 	background-position: center;
 }
 #about-header {
-    background-image: url(../images/mountain.jpg);
+    background-image: url(../images/ocean.jpg);
     background-position: right;
 }
 #services-header {
@@ -197,7 +197,7 @@ section a {
 }
 .service-cont p {
     padding: 0 1rem 1rem 1rem;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
 }
 
 .space {
@@ -205,14 +205,17 @@ section a {
 }
 .quote {
     max-height: 90vh;
-    justify-content: center;
-    background-image: url(../images/plant3.jpg);
+    justify-content: flex-end;
+    background-image: url(../images/feathertop.jpg);
     background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom;
 }
 .quote h2 {
     padding:2rem;
+}
+.quote a {
+    margin-bottom: 3vh;
 }
 
 
