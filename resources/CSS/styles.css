@@ -192,8 +192,11 @@ section a {
     font-family: 'Merriweather, serif';
     margin: 1rem 0;
 }
-.service-cont img {
-    max-width: 80%;
+.private img {
+    width: 50%;
+}
+.couples img {
+    width: 85%;
 }
 .service-cont p {
     padding: 0 1rem 1rem 1rem;
@@ -266,7 +269,7 @@ section a {
     height:fit-content;
     margin-bottom: 10vh;
 }
-main img{
+#team-main img{
     border-radius: 15rem;
 }
 .team-qualifications {
@@ -473,6 +476,9 @@ footer h3 {
     .service-cont img {
         max-width: 75%;
     }
+    .private img {
+        width: 75%;
+    }
     .space {
         height: 70vh;
     }
@@ -499,6 +505,16 @@ footer h3 {
     }
 
     .about {
-        height: 120vh;
+        height: fit-content;
+    }
+    .rates {
+        flex-direction: column;
+    }
+    #team-main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .portrait {
+        margin-bottom: 10vh;
     }
 }
