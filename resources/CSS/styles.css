@@ -30,8 +30,7 @@ header {
 	background-position: center;
 }
 #about-header {
-    background-image: url(../images/ocean.jpg);
-    background-position: right;
+    background-image: url(../images/ocean4.jpg);
 }
 #services-header {
     background-image: url(../images/hands4.jpg);
@@ -40,8 +39,9 @@ header {
     background-image: url(../images/plant.jpg);
 }
 #contact-header {
-    background-image: url(../images/ocean3.jpg);
+    background-image: url(../images/stones.jpg);
 }
+
 /* nav styling */
 .nav {
 	height: 10vh;
@@ -191,12 +191,11 @@ section a {
 .service-cont h3 {
     font-family: 'Merriweather, serif';
     margin: 1rem 0;
+    max-width: 75%;
+    text-align: center;
 }
-.private img {
-    width: 50%;
-}
-.couples img {
-    width: 85%;
+.service-cont img {
+    max-width: 80%;
 }
 .service-cont p {
     padding: 0 1rem 1rem 1rem;
@@ -475,9 +474,6 @@ footer h3 {
     }
     .service-cont img {
         max-width: 75%;
-    }
-    .private img {
-        width: 75%;
     }
     .space {
         height: 70vh;
