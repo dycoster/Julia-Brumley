@@ -233,20 +233,31 @@ section a {
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+.therapy {
+    display: flex;
+    justify-content: space-evenly;
+}
 .main p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    max-width: 29%;
 }
 .main h2{
     margin: 5vh 0;
 }
 .about {
-    padding-left: 5vh;
-    padding-bottom: 5vh;
+    padding: 0 1vh 5vh 5vh;
 }
 .rates {
     display: flex;
     flex-direction: row;
     background: linear-gradient(#f5ecdc, #fff);
+}
+.rates-card{
+    max-width: 50%;
+}
+.rates p {
+    max-width: 80%;
 }
 .quote h2{
     color: #fff;
@@ -270,12 +281,17 @@ section a {
 }
 #team-main img{
     border-radius: 15rem;
+    max-width: 100%;
 }
 .team-qualifications {
+    max-width: 60%;
     padding-left: 5vh;
 }
 .team-qualifications h2, h4{
     margin: 0 0 2rem 0;
+}
+.team-qualifications p {
+    max-width: 90%;
 }
 /* FOOTER styles */
 
@@ -503,8 +519,17 @@ footer h3 {
     .about {
         height: fit-content;
     }
+    .therapy {
+        flex-direction: column;
+    }
+    .therapy p{
+        max-width: 90%;
+    }
     .rates {
         flex-direction: column;
+    }
+    .rates-card{
+        max-width: 90%;
     }
     #team-main{
         flex-direction: column;
@@ -512,5 +537,8 @@ footer h3 {
     }
     .portrait {
         margin-bottom: 10vh;
+    }
+    .team-qualifications {
+        max-width: 100%;
     }
 }
