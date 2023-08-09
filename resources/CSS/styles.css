@@ -134,7 +134,7 @@ p {
 
 
 section {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,18 +176,14 @@ section a {
     max-width: 100%;
     justify-content: space-around;
 }
-.private {
+.service-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    max-width: 45%;
 }
-.couples {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
+
 .service-cont h3 {
     font-family: 'Merriweather, serif';
     margin: 1rem 0;
@@ -246,7 +242,14 @@ section a {
     margin: 5vh 0;
 }
 .about {
+    display: flex;
+    flex-direction: row;
+    min-height: 40vh;
+    align-items: baseline;
     padding: 0 1vh 5vh 5vh;
+}
+.h2-cont {
+    min-width: 29%;
 }
 .rates {
     display: flex;
@@ -434,6 +437,14 @@ footer h3 {
     margin-left: 1rem;
 }
 }
+
+@media screen and (max-width: 930px) {
+    .about {
+        flex-direction: column;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     header {
         height: 95vh;
