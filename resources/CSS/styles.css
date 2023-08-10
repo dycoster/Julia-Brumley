@@ -674,6 +674,9 @@ footer h3 {
     .service-cont img {
         max-width: 75%;
     }
+    .service-card {
+        max-width: 100%;
+    }
     .space {
         height: 70vh;
     }
