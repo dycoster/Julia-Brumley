@@ -39,7 +39,7 @@ header {
     background-image: url(../images/plant.jpg);
 }
 #contact-header {
-    background-image: url(../images/vase1.jpg);
+    background-image: url(../images/stones.jpg);
 }
 
 /* nav styling */
@@ -51,7 +51,7 @@ header {
 	align-items: center;
 	position: relative;
 	z-index: 1;
-    background-color: #424e39;
+    background-color: #698474;
 }
 
 .nav ul {
@@ -605,7 +605,7 @@ footer h3 {
 
 @media screen and (min-width: 950px) {
     #header {
-        background-color: #5c6c59;
+        background-color: #BAC7A7;
         background-size: contain;
     }
     .text-box{
