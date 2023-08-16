@@ -183,6 +183,9 @@ section a {
     align-items: center;
     justify-content: space-between;
     max-width: 45%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    border: 1px solid #fff;
 }
 
 .service-cont h3 {
@@ -192,6 +195,7 @@ section a {
     text-align: center;
 }
 .service-cont img {
+    padding-top: 2rem;
     max-width: 80%;
 }
 .service-cont p {
