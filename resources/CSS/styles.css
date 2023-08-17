@@ -563,7 +563,7 @@ footer h3 {
         right: 0px;
         height: 90vh;
         top: 10vh;
-        background: #fff;
+        background: #698474;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -578,7 +578,7 @@ footer h3 {
         opacity: 0;
     }
     .nav-links a {
-        color: #444;
+        color: #fff;
     }
     .burger {
         display: block;
@@ -720,7 +720,10 @@ footer h3 {
         font-size: 0.8rem;
     }
     .services {
-        height: 160vh;
+        height: fit-content;
+    }
+    .services h1 {
+        margin: 1rem 0;
     }
     .service-cont {
         flex-direction: column;
@@ -730,6 +733,7 @@ footer h3 {
     }
     .service-card {
         max-width: 100%;
+        margin: 2rem 0;
     }
     .space {
         height: 70vh;
