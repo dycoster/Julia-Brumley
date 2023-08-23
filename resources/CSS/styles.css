@@ -21,7 +21,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-	height: 88vh;
+	height: 95vh;
 	width: 100%;
 	overflow: hidden;
     background-image: url(../images/julia5.png);
@@ -497,6 +497,9 @@ footer ul {
         width: 60%;
         background-color: #fff;
     }
+    .contact-container {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 1060px) {
@@ -805,6 +808,25 @@ footer ul {
     }
 
 }
+
+
+
+
+@keyframes enter-animation {
+    0% {
+      transform: translateY(150px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .image-animation {
+      animation: enter-animation 1.2s 1;
+    }
+  }
 
 
 /* form */
