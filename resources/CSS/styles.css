@@ -352,7 +352,7 @@ section a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 65%;
+    width: 75%;
     border-radius: 5rem;
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -365,8 +365,8 @@ section a {
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
-    max-height: 500px;
-    padding-left: 5rem;
+    padding: 5rem 0 5rem 5rem;
+    width: 60%;
 }
 .contact-text h3 {
     font-family: 'Merriweather', serif; 
@@ -379,11 +379,16 @@ section a {
     color:#444;
 }
 .portrait-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 2rem;
+    width: 40%;
 }
 .portrait-container img {
     border-radius: 5vh;
-    max-height: 400px;
+    width: 100%;
+
 }
 @media screen and (max-width: 1122px) {
     .contact-container {
@@ -396,161 +401,6 @@ section a {
     }
 }
 
-
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-  }
-  
-  input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-    color: #bbb5af;
-  }
-  
-  input::-moz-placeholder, textarea::-moz-placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-  }
-  
-  input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-    color: #bbb5af;
-  }
-  
-  input::placeholder, textarea::placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-  }
-  
-  input:focus::placeholder, textarea::focus:placeholder {
-    color: #bbb5af;
-  }
-  
-  input::-ms-placeholder, textarea::-ms-placeholder {
-    color: #aca49c;
-    font-size: 0.875em;
-  }
-  
-  input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-    color: #bbb5af;
-  }
-  
-  /* on hover placeholder */
-  
-  input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
-    color: #e2dedb;
-    font-size: 0.875em;
-  }
-  
-  input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
-    color: #cbc6c1;
-  }
-  
-  input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-    color: #e2dedb;
-    font-size: 0.875em;
-  }
-  
-  input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-    color: #cbc6c1;
-  }
-  
-  input:hover::placeholder, textarea:hover::placeholder {
-    color: #e2dedb;
-    font-size: 0.875em;
-  }
-  
-  input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-    color: #cbc6c1;
-  }
-  
-  input:hover::placeholder, textarea:hover::placeholder {
-    color: #e2dedb;
-    font-size: 0.875em;
-  }
-  
-  input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
-    color: #cbc6c1;
-  }
-
- 
-  #form {
-    position: relative;
-    width: 500px;
-    margin: 50px auto 100px auto;
-  }
-  
-  input {
-    font-family: 'Lato', sans-serif;
-    font-size: 0.875em;
-    width: 470px;
-    height: 50px;
-    padding: 0px 15px 0px 15px;
-    
-    background: transparent;
-    outline: none;
-    color: #726659;
-    
-    border: solid 1px #b3aca7;
-    border-bottom: none;
-    
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-  }
-  
-  input:hover {
-    background: #b3aca7;
-    color: #e2dedb;
-  }
-  
-  textarea {
-    width: 470px;
-    max-width: 470px;
-    height: 110px;
-    max-height: 110px;
-    padding: 15px;
-    
-    background: transparent;
-    outline: none;
-    
-    color: #726659;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.875em;
-    
-    border: solid 1px #b3aca7;
-    
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-  }
-  
-  textarea:hover {
-    background: #b3aca7;
-    color: #e2dedb;
-  }
-  
-  #submit {
-    width: 470px;
-    
-    padding: 0;
-    margin: -5px 0px 0px 0px;
-    
-    font-family: 'Lato', sans-serif;
-    font-size: 0.875em;
-    color: #b3aca7;
-    
-    outline:none;
-    cursor: pointer;
-    
-    border: solid 1px #b3aca7;
-    border-top: none;
-  }
-  
-  #submit:hover {
-    color: #e2dedb;
-  }
-
 /* FOOTER styles */
 
 
@@ -562,6 +412,7 @@ footer {
     background-color: #fff;
 }
 .contact-footer{
+    height: 13vh;
     background-color: #698474;
 }
 .contact-footer nav {
@@ -601,7 +452,7 @@ footer a {
     font-family: 'Merriweather', 'serif';
     font-size: 1.3rem;
     font-weight: 400;
-    
+
 }
 
 footer ul {
@@ -835,8 +686,16 @@ footer ul {
     .space {
         height: 70vh;
     }
+
+    .portrait-container {
+        width: 55%;
+        padding: 0 0 4rem;
+    }
     footer {
         height:25vh;
+    }
+    .contact-footer{
+        height: 25vh;
     }
     .footer-nav {
         height: 25vh;
@@ -945,7 +804,162 @@ footer ul {
         padding-top: 5rem;
     }
 
-    #form {
-        display: none;
-    }
 }
+
+
+/* form */
+
+/* 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
+  
+  input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: #bbb5af;
+  }
+  
+  input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
+  
+  input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color: #bbb5af;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
+  
+  input:focus::placeholder, textarea::focus:placeholder {
+    color: #bbb5af;
+  }
+  
+  input::-ms-placeholder, textarea::-ms-placeholder {
+    color: #aca49c;
+    font-size: 0.875em;
+  }
+  
+  input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+    color: #bbb5af;
+  }
+  
+  /* on hover placeholder */
+/*   
+  input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+    color: #cbc6c1;
+  }
+  
+  input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+    color: #cbc6c1;
+  }
+  
+  input:hover::placeholder, textarea:hover::placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+    color: #cbc6c1;
+  }
+  
+  input:hover::placeholder, textarea:hover::placeholder {
+    color: #e2dedb;
+    font-size: 0.875em;
+  }
+  
+  input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+    color: #cbc6c1;
+  } */
+/* 
+ 
+  #form {
+    position: relative;
+    width: 500px;
+    margin: 50px auto 100px auto;
+  }
+  
+  input {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    
+    background: transparent;
+    outline: none;
+    color: #726659;
+    
+    border: solid 1px #b3aca7;
+    border-bottom: none;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  }
+  
+  input:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+  }
+  
+  textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    
+    background: transparent;
+    outline: none;
+    
+    color: #726659;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    
+    border: solid 1px #b3aca7;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  } */
+/*   
+  textarea:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+  }
+  
+  #submit {
+    width: 470px;
+    
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    color: #b3aca7;
+    
+    outline:none;
+    cursor: pointer;
+    
+    border: solid 1px #b3aca7;
+    border-top: none;
+  }
+  
+  #submit:hover {
+    color: #e2dedb;
+  } */
