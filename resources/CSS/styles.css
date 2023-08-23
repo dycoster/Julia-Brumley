@@ -597,6 +597,12 @@ footer a {
 .f-li {
     list-style: none;
 }
+.f-title {
+    font-family: 'Merriweather', 'serif';
+    font-size: 1.3rem;
+    font-weight: 400;
+    
+}
 
 footer ul {
     display: flex;
@@ -836,19 +842,27 @@ footer ul {
         height: 25vh;
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
     }
     .footer-nav-cont{
         width: 100%;
     }
     .address {
         text-align: center;
-        margin-bottom: 1rem;
     }
     footer p{
         max-width: 100%;
     }
     footer a {
         font-size: 0.85rem;
+    }
+    .f-li a {
+        padding: 0.8rem 2rem;
+        border: 1px solid #444;
+        border-radius: 5px;
+    }
+    .f-li a:hover {
+        background-color: blanchedalmond;
     }
 
     @media only screen and (max-width: 500px) {
