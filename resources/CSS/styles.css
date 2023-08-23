@@ -21,9 +21,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-	min-height: 100vh;
+	height: 88vh;
 	width: 100%;
-	overflow-x: hidden;
+	overflow: hidden;
     background-image: url(../images/julia5.png);
     background-repeat: no-repeat;
 	background-size: cover;
@@ -102,7 +102,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
     padding: 1rem;
 }
 
@@ -127,7 +127,7 @@ p {
     max-width: 80%;
  }
 .text-box {
-    max-width: 50%;
+    max-width: 65%;
 }
 
 
@@ -344,13 +344,18 @@ section a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 5rem;
+    padding: 5rem;
+    background-color: oldlace;
+    align-items: center;
 }
 .contact-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    max-width: 100%;
+    justify-content: space-between;
+    width: 65%;
+    border-radius: 5rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .contact-container h2{
     margin-top: 0;
@@ -361,10 +366,34 @@ section a {
     flex-direction: column;
     justify-content: space-evenly;
     max-height: 500px;
+    padding-left: 5rem;
+}
+.contact-text h3 {
+    font-family: 'Merriweather', serif; 
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: normal;
+}
+.contact-text a{
+    text-decoration: none;
+    color:#444;
+}
+.portrait-container {
+    padding: 2rem;
 }
 .portrait-container img {
     border-radius: 5vh;
     max-height: 400px;
+}
+@media screen and (max-width: 1122px) {
+    .contact-container {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 940px) {
+    .contact-container {
+        width: 100%;
+    }
 }
 
 
@@ -533,15 +562,17 @@ footer {
     background-color: #fff;
 }
 .contact-footer{
-    background-color: blanchedalmond;
+    background-color: #698474;
 }
 .contact-footer nav {
-    color:#698474;
+    color:#fff;
 }
 .contact-footer a {
-    color:#698474;
+    color:#fff;
 }
-
+.contact-footer a:hover {
+    color:blanchedalmond;
+}
 .footer-nav {
     display: flex;
     flex-direction: row;
@@ -576,6 +607,40 @@ footer ul {
 
 /* RESPONSIVE */
 
+@media screen and (max-width:1799px) and (orientation: landscape){
+    section {
+        width:100%;
+    }
+    .about {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width:1800px) and (orientation: landscape) {
+    header {
+        height: 100vh;
+    }
+    main {
+        background-color: oldlace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section {
+        width: 60%;
+    }
+    .approach {
+        background-color: #fff;
+    }
+    .space {
+        background-color: #fff;
+    }
+    .about {
+        width: 60%;
+        background-color: #fff;
+    }
+}
 
 @media screen and (max-width: 1060px) {
 
@@ -588,7 +653,7 @@ footer ul {
         right: 0px;
         height: 90vh;
         top: 10vh;
-        background: #698474;
+        background: blanchedalmond;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -603,7 +668,7 @@ footer ul {
         opacity: 0;
     }
     .nav-links a {
-        color: #fff;
+        color: #444;
     }
     .burger {
         display: block;
@@ -678,10 +743,10 @@ footer ul {
     }
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (min-height: 601px) {
 
     section {
-        height: 130vh;
+        height: 100vh;
     }
     .text-box {
         max-width: 75%;
@@ -698,7 +763,7 @@ footer ul {
 
 @media screen and (max-width: 768px) {
     header {
-        height: 95vh;
+        height: 100vh;
     }
     section {
         height: 100vh;
@@ -717,7 +782,7 @@ footer ul {
     }
     .intro {
         flex-direction: column;
-        margin-bottom: 0;
+        margin-bottom: 2rem;
     }
     .text-box {
         max-width: 90%;
@@ -752,12 +817,13 @@ footer ul {
     }
     .service-cont {
         flex-direction: column;
+        align-items: center;
     }
     .service-cont img {
         max-width: 75%;
     }
     .service-card {
-        max-width: 100%;
+        max-width: 80%;
         margin: 2rem 0;
     }
     .space {
@@ -785,6 +851,34 @@ footer ul {
         font-size: 0.85rem;
     }
 
+    @media only screen and (max-width: 500px) {
+        
+        .service-card {
+            max-width: 95%;
+        }
+    }
+    
+    
+  @media only screen and  (orientation: landscape) and (max-height: 600px) {
+
+    #header {
+        background-size: contain;
+        background-color: #BAC7A7;
+    }
+    section {
+        height: 130vh;
+    }
+    .text-box {
+        max-width: 75%;
+    }
+    .service-cont {
+        align-items: center;
+    }
+    .service-card {
+        max-width: 70%;
+    }
+
+  }  
 
     /* ABOUT SPECIFIC */
     
@@ -824,10 +918,6 @@ footer ul {
     /* CONTACT SPECIFIC */
 
 
-    .contact-main {
-        margin: 1rem;
-    }
-
     .contact-container{
         flex-direction: column;
         align-items: center;
@@ -835,12 +925,12 @@ footer ul {
     }
     .contact-text {
         width:90%;
-        min-height: 100vh;
+        min-height: 40vh;
     }
-    .contact-container img{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+    .contact-container h2 {
+        padding-top: 5rem;
     }
+
     #form {
         display: none;
     }
