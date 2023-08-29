@@ -834,7 +834,7 @@ footer ul {
 
 @keyframes enter-animation {
     0% {
-      transform: translateY(120px);
+      transform: translateY(100px);
       opacity: 0;
     }
     100% {
