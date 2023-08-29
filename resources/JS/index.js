@@ -53,3 +53,4 @@ const observer = new IntersectionObserver(entries => {
   viewbox.forEach(image => {
     observer.observe(image);
   });
+

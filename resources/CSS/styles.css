@@ -24,22 +24,17 @@ header {
 	height: 95vh;
 	width: 100%;
 	overflow: hidden;
-    background-image: url(../images/julia5.png);
+    background-image: url(../images/julia5_200.jpg);
     background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 #about-header {
-    background-image: url(../images/ocean4.jpg);
+    background-image: url(../images/ocean4-small.jpg);
 }
-#services-header {
-    background-image: url(../images/stones.jpg);
-}
-#team-header {
-    background-image: url(../images/plant.jpg);
-}
+
 #contact-header {
-    background-image: url(../images/stones.jpg);
+    background-image: url(../images/stones-small.jpg);
 }
 
 /* nav styling */
@@ -603,6 +598,8 @@ footer ul {
     }
 }
 
+
+
 @media only screen and (orientation: landscape) and (min-height: 601px) {
 
     section {
@@ -611,17 +608,44 @@ footer ul {
     .text-box {
         max-width: 75%;
     }
-
   }
+
+ @media only screen and  (orientation: landscape) and (max-height: 600px) {
+
+    #header {
+        background-size: contain;
+        background-color: #BAC7A7;
+    }
+    section {
+        height: 130vh;
+    }
+    .text-box {
+        max-width: 75%;
+    }
+    .service-cont {
+        align-items: center;
+    }
+    .service-card {
+        max-width: 70%;
+    }
+  } 
+
+
+  /* PORTRAIT  */
+
 
 @media screen and (max-width: 930px) {
     .about {
         flex-direction: column;
     }
-
 }
 
 @media screen and (max-width: 768px) {
+
+    
+    /* GENERAL & INDEX */
+
+
     header {
         height: 100vh;
     }
@@ -690,71 +714,6 @@ footer ul {
         height: 70vh;
     }
 
-    .portrait-container {
-        width: 55%;
-        padding: 0 0 4rem;
-    }
-    footer {
-        height:25vh;
-    }
-    .contact-footer{
-        height: 25vh;
-    }
-    .footer-nav {
-        height: 25vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    .footer-nav-cont{
-        width: 100%;
-    }
-    .address {
-        text-align: center;
-    }
-    footer p{
-        max-width: 100%;
-    }
-    footer a {
-        font-size: 0.85rem;
-    }
-    .f-li a {
-        padding: 0.8rem 2rem;
-        border: 1px solid #444;
-        border-radius: 5px;
-    }
-    .f-li a:hover {
-        background-color: blanchedalmond;
-    }
-
-    @media only screen and (max-width: 500px) {
-        
-        .service-card {
-            max-width: 95%;
-        }
-    }
-    
-    
-  @media only screen and  (orientation: landscape) and (max-height: 600px) {
-
-    #header {
-        background-size: contain;
-        background-color: #BAC7A7;
-    }
-    section {
-        height: 130vh;
-    }
-    .text-box {
-        max-width: 75%;
-    }
-    .service-cont {
-        align-items: center;
-    }
-    .service-card {
-        max-width: 70%;
-    }
-
-  }  
 
     /* ABOUT SPECIFIC */
     
@@ -790,9 +749,11 @@ footer ul {
         max-width: 100%;
     }
 
-
     /* CONTACT SPECIFIC */
 
+    .contact-main {
+        padding: 2rem;
+    }
 
     .contact-container{
         flex-direction: column;
@@ -800,21 +761,80 @@ footer ul {
 
     }
     .contact-text {
+        padding: 5rem 1rem;
         width:90%;
         min-height: 40vh;
     }
     .contact-container h2 {
         padding-top: 5rem;
     }
+    .portrait-container {
+        width: 55%;
+        padding: 0 0 4rem;
+    }
+    .contact-footer{
+        height: 25vh;
+    }
 
+
+    /* FOOTER */
+
+
+    footer {
+        height:25vh;
+    }
+    .footer-nav {
+        height: 25vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .footer-nav-cont{
+        width: 100%;
+    }
+    .address {
+        text-align: center;
+    }
+    footer p{
+        max-width: 100%;
+    }
+    footer a {
+        font-size: 0.85rem;
+    }
 }
 
 
+@media only screen and (max-width: 500px) {
+        
+    .service-card {
+        max-width: 95%;
+    }
+
+    .contact-main {
+        padding: 1rem;
+    }
+    .contact-text {
+        padding: 3rem 1rem;
+    }
+    .portrait-container {
+        width: 65%;
+    }
+}    
+
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+
+    footer {
+        height: 35vh;
+    }
+    .contact-footer {
+        height: 35vh;
+    }
+}
 
 
 @keyframes enter-animation {
     0% {
-      transform: translateY(150px);
+      transform: translateY(120px);
       opacity: 0;
     }
     100% {
