@@ -38,21 +38,16 @@ const navSlide = () => {
 }
 navSlide();
 
-const observerOptions = {
-  root: null, // Use the viewport as the root
-  rootMargin: '0px', // No margin added to the root
-  // threshold: 0.5 // Trigger animation when 50% of the element is visible
-};
-
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('image-animation');
-    } else {
-      entry.target.classList.remove('image-animation'); // Remove animation class when out of viewport
+      
+      // Stop observing the element once it's animated
+      observer.unobserve(entry.target);
     }
   });
-}, observerOptions);
+});
 
 const viewbox = document.querySelectorAll('.image');
 viewbox.forEach(image => {
