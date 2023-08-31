@@ -67,6 +67,7 @@ header {
 	text-decoration: none;
 	font-size: 1rem;
 	text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
@@ -147,20 +148,24 @@ section a {
     color:#fff;
     padding: 1.5rem 3rem;
     border-radius: 5px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 .button:hover {
     background-color: blanchedalmond;
-    color:#444
+    color:#444;
+    transform: scale(1.05);
 }
 .book {
     background: #fff;
     color:#444;
     padding: 1.5rem 3rem;
     border-radius: 5px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 .book:hover {
     background-color:  blanchedalmond;
-    color:#444
+    color:#444;
+    transform: scale(1.05);
 }
 .approach {
     color: #444;
