@@ -848,7 +848,7 @@ footer ul {
     }
   }
   @media (prefers-reduced-motion: no-preference) {
-    .image-animation {
+    .scroll-animation {
       animation: enter-animation 1.2s 1;
     }
   }

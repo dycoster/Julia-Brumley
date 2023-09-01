@@ -41,7 +41,7 @@ navSlide();
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('image-animation');
+      entry.target.classList.add('scroll-animation');
       
       // Stop observing the element once it's animated
       observer.unobserve(entry.target);
@@ -49,9 +49,9 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 
-const viewbox = document.querySelectorAll('.image');
-viewbox.forEach(image => {
-  observer.observe(image);
+const viewbox = document.querySelectorAll('.animate');
+viewbox.forEach(animate => {
+  observer.observe(animate);
 });
 
 
