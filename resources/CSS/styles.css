@@ -343,7 +343,9 @@ section a {
     flex-direction: column;
     justify-content: space-evenly;
     padding: 5rem;
-    background-color: oldlace;
+    background-image: url(../images/linnen.jpg);
+    background-size: contain;
+    background-repeat: repeat;
     align-items: center;
 }
 .contact-container {
@@ -357,7 +359,7 @@ section a {
 }
 .contact-container h2{
     margin-top: 0;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
 }
 .contact-text {
     display:flex;
@@ -381,6 +383,7 @@ section a {
     width:fit-content;
     background-color: #698474;
     color:#fff;
+    margin-top: 1rem;
 }
 #contact-book:hover {
     background-color: blanchedalmond;
