@@ -55,4 +55,35 @@ viewbox.forEach(animate => {
 });
 
 
+const textObserverL = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('text-animation-left');
+      
+      // Stop observing the element once it's animated
+      textObserverL.unobserve(entry.target);
+    }
+  });
+});
+
+const textViewboxL = document.querySelectorAll('.text-animate-left');
+textViewboxL.forEach(textAnimateL => {
+  textObserverL.observe(textAnimateL);
+});
+
+const textObserverR = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('text-animation-right');
+      
+      // Stop observing the element once it's animated
+      textObserverR.unobserve(entry.target);
+    }
+  });
+});
+
+const textViewboxR = document.querySelectorAll('.text-animate-right');
+textViewboxR.forEach(textAnimateR => {
+  textObserverR.observe(textAnimateR);
+});
 

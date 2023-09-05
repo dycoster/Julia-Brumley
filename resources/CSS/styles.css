@@ -868,6 +868,38 @@ footer ul {
   }
 
 
+  @keyframes text-animationL {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .text-animation-left {
+      animation: text-animationL 1.2s 1;
+    }
+  }
+
+  
+  @keyframes text-animationR {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .text-animation-right {
+      animation: text-animationR 1.2s 1;
+    }
+  }
 /* form */
 
 /* 
