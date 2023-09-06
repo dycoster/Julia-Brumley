@@ -347,10 +347,12 @@ section a {
     background-size: contain;
     background-repeat: repeat;
     align-items: center;
+    height: fit-content;
+    color:#444;
 }
 .contact-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     width: 75%;
     border-radius: 5rem;
@@ -361,11 +363,15 @@ section a {
     margin-top: 0;
     margin-bottom: 3vh;
 }
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+}
 .contact-text {
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 5rem 0 5rem 5rem;
+    padding: 5rem 0 1rem 5rem;
     width: 60%;
 }
 .contact-text h3 {
@@ -375,15 +381,21 @@ section a {
     letter-spacing: normal;
 }
 .contact-text a{
+    margin-top: 0.5rem;
     text-decoration: none;
     color:#444;
+}
+.contact-text p {
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 0.5rem;
 }
 
 #contact-book {
     width:fit-content;
     background-color: #698474;
     color:#fff;
-    margin-top: 1rem;
+    text-decoration: none;
 }
 #contact-book:hover {
     background-color: blanchedalmond;
@@ -394,13 +406,18 @@ section a {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem;
+    padding: 5rem 2rem 0 1rem;
     width: 40%;
 }
 .portrait-container img {
     border-radius: 5vh;
     width: 100%;
-
+}
+.booking-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
 }
 @media screen and (max-width: 1122px) {
     .contact-container {
@@ -771,25 +788,29 @@ footer ul {
     /* CONTACT SPECIFIC */
 
     .contact-main {
-        padding: 2rem;
+        padding: 3rem 2rem;
     }
 
-    .contact-container{
+    .contact-wrapper {
         flex-direction: column;
         align-items: center;
-
     }
     .contact-text {
         padding: 5rem 1rem;
         width:90%;
         min-height: 40vh;
+        align-items: center;
+        text-align: center;
     }
     .contact-container h2 {
         padding-top: 5rem;
     }
     .portrait-container {
         width: 55%;
-        padding: 0 0 4rem;
+        padding: 0;
+    }
+    .booking-wrapper {
+        height: 15vh;
     }
     .contact-footer{
         height: 25vh;
@@ -830,7 +851,7 @@ footer ul {
     }
 
     .contact-main {
-        padding: 1rem;
+        padding: 3rem 1rem;
     }
     .contact-text {
         padding: 3rem 1rem;
