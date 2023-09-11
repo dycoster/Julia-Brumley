@@ -666,6 +666,16 @@ footer ul {
     }
   } 
 
+  @media only screen and  (orientation: landscape) and (max-width: 950px) {
+
+    #header {
+        background-size: contain;
+        background-color: #BAC7A7;
+    }
+    .text-box {
+        max-width: 90%;
+    }
+  }
 
   /* PORTRAIT  */
 
