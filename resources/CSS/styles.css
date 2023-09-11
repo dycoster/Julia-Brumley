@@ -532,11 +532,19 @@ footer ul {
         width: 60%;
     }
 }
-
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1384px) {
+    .nav {
+        height: 15vh;
+    }
+}
+@media screen and (max-width: 1067px) {
 
 	body {
         overflow-x: hidden;
+    }
+
+    .nav {
+        height: 10vh;
     }
 
     .nav-links {
