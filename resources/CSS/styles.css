@@ -343,9 +343,7 @@ section a {
     flex-direction: column;
     justify-content: space-evenly;
     padding: 5rem;
-    background-image: url(../images/linnen.jpg);
-    background-size: contain;
-    background-repeat: repeat;
+    background-color: linen;
     align-items: center;
     height: fit-content;
     color:#444;
@@ -417,7 +415,7 @@ section a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
+    margin: 3rem;
 }
 @media screen and (max-width: 1122px) {
     .contact-container {
